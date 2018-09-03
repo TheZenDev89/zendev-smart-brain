@@ -25,7 +25,7 @@ app.use(cors());
 //(AFTER app variable has been created ABOVE): Use body-parser (which is middleware) to parse json data as below:
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => { res.send(database.users) })
+app.get('/', (req, res) => { res.send('It is working!') })
 
 app.post('/signIn', (req, res) => { signIn.handleSignIn(req, res, db, bcrypt) })
 
