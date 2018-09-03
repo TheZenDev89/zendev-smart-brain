@@ -2,7 +2,7 @@ const Clarifai = require('clarifai');
 
 //The next line defines the API key and stores it in 'app'
 const app = new Clarifai.App({
-    apiKey: '26046e22c38347eeacc7005d83321a5f'
+    apiKey: process.env.CLARIFAI_API
 });
 
 //'app' has the API key stored in it as a value(I think)
